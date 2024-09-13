@@ -1,0 +1,23 @@
+.diamond-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .diamond-list li {
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .diamond-list li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #ccc transparent;
+  }
